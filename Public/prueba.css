@@ -189,7 +189,7 @@ header {
   height: 500px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (40%)[3];
+  -ms-grid-columns: (40%)(3);
       grid-template-columns: repeat(3, 40%);
   -ms-grid-rows: 225px 225px;
       grid-template-rows: 225px 225px;

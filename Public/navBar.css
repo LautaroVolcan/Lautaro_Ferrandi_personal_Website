@@ -1,0 +1,52 @@
+body {
+  background-image: url("../MEDIA/background.png");
+  font-family: "lato";
+  color: #ffffff;
+}
+
+body header {
+  background-color: black;
+  opacity: 0.7;
+  height: 60px;
+}
+
+body header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .menu h2 {
+  text-align: center;
+}
+
+body header .menu nav {
+  width: 40%;
+}
+
+body header .menu nav ul {
+  list-style: none;
+}
+
+body header .menu nav .burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+body header .menu nav .burger a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body header .menu nav .burger a:hover {
+  color: #ffffff;
+}
+/*# sourceMappingURL=navBar.css.map */
