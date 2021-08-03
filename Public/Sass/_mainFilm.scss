@@ -1,0 +1,26 @@
+.filmMain {
+  width: auto;
+  height: 700px;
+  display: flex;
+  .flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
+    padding-top: 8rem;
+    .gridMain {
+      width: 1000px;
+      height: 500px;
+      display: grid;
+      grid-template-columns: repeat(3, 40%);
+      grid-template-rows: 225px 225px;
+      grid-gap: 20px;
+      .films__Title {
+        align-items: baseline;
+        .films__Title__main {
+          font-size: 70px;
+        }
+      }
+    }
+  }
+}

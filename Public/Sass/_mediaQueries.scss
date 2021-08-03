@@ -1,0 +1,24 @@
+@media only screen and (max-width:768px){
+    .titles h1{
+      font-size: 400px;
+      color:blueviolet;
+    }
+  }
+    @media only screen and (max-width:768px){
+      .titles h1{
+        font-size: 30px;
+        color: brown;
+      }
+      h2{
+        font-size: 10px;
+      }
+    }
+      @media only screen and (min-width: 1024px) {
+        h2 {font-size: 30px;
+               
+        }
+        h1{
+            color:white;
+            font-size: 36px ;
+        }
+      }

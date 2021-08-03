@@ -17,6 +17,12 @@ header .menu h2 {
   text-align: center;
 }
 
+header .menu h2 .menu__logo {
+  margin: 20px 0 0 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
 header .menu nav {
   width: 40%;
 }
@@ -42,6 +48,7 @@ header .menu nav .burger a {
 
 header .menu nav .burger a:hover {
   color: #ffffff;
+  text-decoration: underline;
 }
 
 footer .lineFather {
@@ -56,7 +63,7 @@ footer .lineFather {
           align-items: center;
 }
 
-footer .lineFather line {
+footer .lineFather .line {
   height: 20px;
   width: 500px;
   border-top: 1px solid white;
@@ -72,61 +79,18 @@ footer .redesSociales {
   margin-top: 30px;
 }
 
-footer .redesSociales .footerREF {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-footer .redesSociales .footerREF:hover {
-  color: #ffffff;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  background-image: url("../MEDIA/background.png");
-  font-family: "lato";
-  color: #ffffff;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-a:hover {
-  color: #ffffff;
-}
-
-.burger a:hover {
-  text-decoration: underline;
-}
-
-ul {
+footer .redesSociales .footerList {
   list-style: none;
 }
 
-.lineFather {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+footer .redesSociales .footerList .footerREF {
+  text-decoration: none;
+  color: #ffffff;
 }
 
-.line {
-  height: 20px;
-  width: 500px;
-  border-top: 1px solid white;
+footer .redesSociales .footerList .footerREF:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .titles {
@@ -147,76 +111,33 @@ ul {
   color: #ffffff;
 }
 
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-h2 {
+.titles h2 {
   text-align: center;
 }
 
-.redesSociales {
+main .titles {
+  height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
 }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+main .titles h2 {
+  text-align: center;
 }
 
-.menu__logo {
-  margin: 20px 0 0 20px;
-}
-
-nav {
-  width: 40%;
-}
-
-.burger {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 20px;
-}
-
-header {
-  background-color: black;
-  opacity: 0.7;
-  height: 60px;
-}
-
-.redesSociales a:hover {
-  text-decoration: underline;
-}
-
-.titles p {
+main .titles p {
   width: 900px;
   height: auto;
 }
@@ -229,7 +150,7 @@ header {
   display: flex;
 }
 
-.flexCenter {
+.filmMain .flexCenter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,7 +164,7 @@ header {
   padding-top: 8rem;
 }
 
-.gridMain {
+.filmMain .flexCenter .gridMain {
   width: 1000px;
   height: 500px;
   display: -ms-grid;
@@ -255,13 +176,13 @@ header {
   grid-gap: 20px;
 }
 
-.gridMain .films__Title {
+.filmMain .flexCenter .gridMain .films__Title {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
 }
 
-.films__Title .films__Title__main {
+.filmMain .flexCenter .gridMain .films__Title .films__Title__main {
   font-size: 70px;
 }
 
@@ -290,5 +211,18 @@ header {
     color: white;
     font-size: 36px;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("../MEDIA/background.png");
+  font-family: "lato";
+  color: #ffffff;
 }
 /*# sourceMappingURL=prueba.css.map */
