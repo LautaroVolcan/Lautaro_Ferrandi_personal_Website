@@ -1,0 +1,27 @@
+footer {
+.lineFather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line{
+    height: 20px;
+    width: 500px;
+    border-top: 1px solid white;
+  
+  }
+  }
+  .redesSociales{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+
+.footerREF{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .footerREF:hover{
+    color: #ffffff;
+  
+  }
+  }
+}

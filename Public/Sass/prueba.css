@@ -44,6 +44,43 @@ header .menu nav .burger a:hover {
   color: #ffffff;
 }
 
+footer .lineFather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .lineFather line {
+  height: 20px;
+  width: 500px;
+  border-top: 1px solid white;
+}
+
+footer .redesSociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+footer .redesSociales .footerREF {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer .redesSociales .footerREF:hover {
+  color: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -55,17 +92,6 @@ body {
   background-image: url("../MEDIA/background.png");
   font-family: "lato";
   color: #ffffff;
-}
-
-body video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0.2;
 }
 
 a {
@@ -83,11 +109,6 @@ a:hover {
 
 ul {
   list-style: none;
-}
-
-h1:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .lineFather {
@@ -124,14 +145,6 @@ h1:hover {
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
-}
-
-.titles .titles__main {
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-name: fade;
-          animation-name: fade;
-  font-size: 70px;
 }
 
 @-webkit-keyframes fade {
@@ -235,7 +248,7 @@ header {
   height: 500px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (40%)(3);
+  -ms-grid-columns: (40%)[3];
       grid-template-columns: repeat(3, 40%);
   -ms-grid-rows: 225px 225px;
       grid-template-rows: 225px 225px;
