@@ -6,10 +6,15 @@ main {
     align-items: center;
     justify-content: center;
     color: #ffffff;
+    .titleAbout{
+      font-size: 70px;
+      padding: 20px;
+    }
     h2 {
       text-align: center;
     }
     p {
+      font-size: 20px;
       width: 900px;
       height: auto;
     }

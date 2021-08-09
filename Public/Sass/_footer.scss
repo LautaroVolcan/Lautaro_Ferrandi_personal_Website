@@ -4,8 +4,8 @@ footer {
     justify-content: center;
     align-items: center;
     .line{
-    height: 20px;
-    width: 500px;
+    height: 10px;
+    width: 1000px;
     border-top: 1px solid white;
   
   }
@@ -17,12 +17,24 @@ footer {
 .footerList{
   list-style: none;
 .footerREF{
+  position: relative;
     text-decoration: none;
     color: #ffffff;
   }
-  .footerREF:hover{
-    color: #ffffff;
-    text-decoration: underline;
+  .footerREF:after{
+      content: "";
+      position: absolute;
+      background-color: whitesmoke;
+      height: 3px;
+      width: 0;
+      left: 0;
+      bottom: -10px;
+      transition: 0.3s;
+  }
+  .footerREF:hover:after{
+    width: 100%;
+    // color: #ffffff;
+    // text-decoration: underline;
   
   }
   }

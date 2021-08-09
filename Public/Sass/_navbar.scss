@@ -5,10 +5,12 @@ header {
   .menu {
     display: flex;
     justify-content: space-between;
-    h2 {
+    .logoIcon {
       text-align: center;
       .menu__logo {
+        position: absolute;
         margin: 20px 0 0 20px;
+        padding-bottom: 30px;
         text-decoration: none;
         color: #ffffff;
       }
@@ -22,13 +24,24 @@ header {
         display: flex;
         justify-content: space-evenly;
         margin-top: 20px;
+
         a {
+          position: relative;
           text-decoration: none;
           color: #ffffff;
         }
-        a:hover {
-          color: #ffffff;
-          text-decoration: underline;
+        a:after {
+          content: "";
+          position: absolute;
+          background-color: whitesmoke;
+          height: 3px;
+          width: 0;
+          left: 0;
+          bottom: -10px;
+          transition: 0.3s;
+        }
+        a:hover:after {
+          width: 100%;
         }
       }
     }

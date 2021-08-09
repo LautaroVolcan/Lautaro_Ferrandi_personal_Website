@@ -13,12 +13,14 @@ header .menu {
           justify-content: space-between;
 }
 
-header .menu h2 {
+header .menu .logoIcon {
   text-align: center;
 }
 
-header .menu h2 .menu__logo {
+header .menu .logoIcon .menu__logo {
+  position: absolute;
   margin: 20px 0 0 20px;
+  padding-bottom: 30px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -42,13 +44,25 @@ header .menu nav .burger {
 }
 
 header .menu nav .burger a {
+  position: relative;
   text-decoration: none;
   color: #ffffff;
 }
 
-header .menu nav .burger a:hover {
-  color: #ffffff;
-  text-decoration: underline;
+header .menu nav .burger a:after {
+  content: "";
+  position: absolute;
+  background-color: whitesmoke;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .menu nav .burger a:hover:after {
+  width: 100%;
 }
 
 footer .lineFather {
@@ -64,8 +78,8 @@ footer .lineFather {
 }
 
 footer .lineFather .line {
-  height: 20px;
-  width: 500px;
+  height: 10px;
+  width: 1000px;
   border-top: 1px solid white;
 }
 
@@ -84,13 +98,25 @@ footer .redesSociales .footerList {
 }
 
 footer .redesSociales .footerList .footerREF {
+  position: relative;
   text-decoration: none;
   color: #ffffff;
 }
 
-footer .redesSociales .footerList .footerREF:hover {
-  color: #ffffff;
-  text-decoration: underline;
+footer .redesSociales .footerList .footerREF:after {
+  content: "";
+  position: absolute;
+  background-color: whitesmoke;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .redesSociales .footerList .footerREF:hover:after {
+  width: 100%;
 }
 
 .titles {
@@ -109,6 +135,10 @@ footer .redesSociales .footerList .footerREF:hover {
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
+}
+
+.titles h1 {
+  font-size: 70px;
 }
 
 .titles h2 {
@@ -133,11 +163,17 @@ main .titles {
   color: #ffffff;
 }
 
+main .titles .titleAbout {
+  font-size: 70px;
+  padding: 20px;
+}
+
 main .titles h2 {
   text-align: center;
 }
 
 main .titles p {
+  font-size: 20px;
   width: 900px;
   height: auto;
 }
@@ -214,6 +250,15 @@ main .titles p {
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
