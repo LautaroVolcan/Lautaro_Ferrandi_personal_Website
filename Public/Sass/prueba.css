@@ -179,6 +179,63 @@ main .titles p {
 }
 
 .filmMain {
+  width: 100%;
+}
+
+.filmMain .gridMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.filmMain .gridMain .films__Title__main {
+  text-align: center;
+  margin: 1rem;
+}
+
+.filmMain .gridMain .boxes {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.filmMain .gridMain .boxes .filmBox {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .filmMain .gridMain {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filmMain .gridMain .films__Title__main {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .filmMain .gridMain .boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .filmMain .gridMain .boxes .filmBox {
+    width: 45%;
+    margin: 1rem;
+  }
+}
+
+.filmMain {
   width: auto;
   height: 700px;
   display: -webkit-box;
@@ -212,41 +269,14 @@ main .titles p {
   grid-gap: 20px;
 }
 
-.filmMain .flexCenter .gridMain .films__Title {
+.filmMain .flexCenter .gridMain .photo__title {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
 }
 
-.filmMain .flexCenter .gridMain .films__Title .films__Title__main {
-  font-size: 70px;
-}
-
-@media only screen and (max-width: 768px) {
-  .titles h1 {
-    font-size: 400px;
-    color: blueviolet;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .titles h1 {
-    font-size: 30px;
-    color: brown;
-  }
-  h2 {
-    font-size: 10px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  h2 {
-    font-size: 30px;
-  }
-  h1 {
-    color: white;
-    font-size: 36px;
-  }
+.filmMain .flexCenter .gridMain .photo__title .photoTitle {
+  font-size: 110px;
 }
 
 * {
@@ -267,7 +297,8 @@ main .titles p {
 
 body {
   background-image: url("../MEDIA/background.png");
+  background-repeat: repeat;
   font-family: "lato";
-  color: #ffffff;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=prueba.css.map */

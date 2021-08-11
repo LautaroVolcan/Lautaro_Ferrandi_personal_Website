@@ -6,49 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo</title>
-    <link rel="icon" href="Public/MEDIA/Top_LOGO.png">
+    <link rel="icon" href="Public/MEDIA/Toplogo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="Public/Css/prueba.css">
+        <link rel="stylesheet" href="Public/Sass/prueba.css">
 
 </head>
 
 <body>
     <header>
-        <div class="menu">
-            <h2 class="logoIcon"> <a href="index.html" class="menu__logo">Ferrandi</a></h2>
-            <nav>
-                <ul class="burger">
-                    <li><a href="Film.html" target="_blank">Films</a></li>
-                    <li> <a href="Photo.html" target="_blank">Photo</a></li>
-                    <li><a href="About.html" target="_blank">About</a></li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="index.html">Ferrandi</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="Film.html">Film</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="Photo.html">Photo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="About.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="contact.html" >Contact</a>
+                  </li>
                 </ul>
-            </nav>
-        </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main class="filmMain">
-        <div class="flexCenter">
+    
             <div class="gridMain">
-                <div class="filmsTitle">
-                    <h1>Photos</h1>
+             
+                    <h1 class="films__Title__main">Photos</h1>
+                <div class="boxes">
+                <div class="filmBox">
+                    <a  data-flickr-embed="true" data-context="true" href="https://www.flickr.com/photos/lautaroferrandi/35289760570/in/datetaken-public/" title="VIAJE 2017-8"><img src="https://live.staticflickr.com/4154/35289760570_0537458535_n.jpg" width="320" height="213" alt="VIAJE 2017-8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
                 </div>
-                <div></div>
-                <div></div>
-                <div>
-                    <a data-flickr-embed="true" data-context="true" href="https://www.flickr.com/photos/lautaroferrandi/35289760570/in/datetaken-public/" title="VIAJE 2017-8"><img src="https://live.staticflickr.com/4154/35289760570_0537458535_n.jpg" width="320" height="213" alt="VIAJE 2017-8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-                </div>
-                <div>
-                    <a data-flickr-embed="true" data-context="true"
+                <div class="filmBox">
+                    <a  data-flickr-embed="true" data-context="true"
                         href="https://www.flickr.com/photos/lautaroferrandi/30245003198/in/datetaken-public/"
                         title="Europa-116"><img src="https://live.staticflickr.com/1891/30245003198_9eb77aedd8_n.jpg"
                             width="320" height="213" alt="Europa-116"></a>
                     <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
                 </div>
-                <div>
-                    <a data-flickr-embed="true" data-context="true"
+                <div class="filmBox">
+                    <a  data-flickr-embed="true" data-context="true"
                         href="https://www.flickr.com/photos/lautaroferrandi/44063956192/in/datetaken-public/"
                         title="Europa-81"><img src="https://live.staticflickr.com/1860/44063956192_96650d1133_n.jpg"
                             width="320" height="213" alt="Europa-81"></a>
@@ -56,6 +68,7 @@
 
                 </div>
             </div>
+            
     </main>
     
     <footer>
