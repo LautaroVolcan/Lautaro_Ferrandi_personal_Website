@@ -79,7 +79,7 @@ footer .lineFather {
 
 footer .lineFather .line {
   height: 10px;
-  width: 1000px;
+  width: 900px;
   border-top: 1px solid white;
 }
 
@@ -90,7 +90,10 @@ footer .redesSociales {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-top: 30px;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .redesSociales .footerList {
@@ -205,6 +208,12 @@ main .titles p {
 
 .filmMain .gridMain .boxes .filmBox {
   margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 769px) {
+  .titles p {
+    font-size: 5px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
