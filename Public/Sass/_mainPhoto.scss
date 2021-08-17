@@ -1,6 +1,6 @@
 .filmMain {
   width: auto;
-  height: 700px;
+  // height: 700px;
   display: flex;
   .flexCenter {
     display: flex;
@@ -17,10 +17,8 @@
       grid-gap: 20px;
       .photo__title {
         align-items: baseline;
-        .photoTitle {
-          font-size: 110px;
-        }
-      }
+     
     }
   }
+}
 }

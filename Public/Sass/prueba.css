@@ -141,11 +141,12 @@ footer .redesSociales .footerList .footerREF:hover:after {
 }
 
 .titles h1 {
-  font-size: 70px;
+  font-size: 2rem;
 }
 
 .titles h2 {
   text-align: center;
+  font-size: 1.5rem;
 }
 
 main .titles {
@@ -167,7 +168,6 @@ main .titles {
 }
 
 main .titles .titleAbout {
-  font-size: 70px;
   padding: 20px;
 }
 
@@ -175,9 +175,9 @@ main .titles h2 {
   text-align: center;
 }
 
-main .titles p {
-  font-size: 20px;
-  width: 900px;
+main .titles .paragraphAbout {
+  font-size: 1rem;
+  width: 400px;
   height: auto;
 }
 
@@ -210,13 +210,24 @@ main .titles p {
   margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 769px) {
-  .titles p {
-    font-size: 5px;
-  }
-}
-
 @media only screen and (min-width: 1024px) {
+  .films__Title__main {
+    font-size: 4rem;
+  }
+  .titles h1 {
+    font-size: 5rem;
+  }
+  .titles h2 {
+    font-size: 3rem;
+  }
+  .titles .paragraphAbout {
+    font-size: 5rem;
+    width: 800px;
+    height: auto;
+  }
+  .filmMain {
+    height: 700px;
+  }
   .filmMain .gridMain {
     width: 100%;
     display: -webkit-box;
@@ -246,7 +257,6 @@ main .titles p {
 
 .filmMain {
   width: auto;
-  height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,10 +292,6 @@ main .titles p {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.filmMain .flexCenter .gridMain .photo__title .photoTitle {
-  font-size: 110px;
 }
 
 * {

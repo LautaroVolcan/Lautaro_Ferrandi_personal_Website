@@ -1,12 +1,27 @@
 @media only screen and (min-width:769px){
-  .titles p{
-    font-size: 5px;
-  }
+ 
 }
   
   @media only screen and (min-width:1024px){
-  //  media film
+ .films__Title__main{
+   font-size: 4rem;
+ }
+    .titles h1{
+   font-size: 5rem;
+
+  }
+  .titles h2{
+    font-size: 3rem;
+  }
+  .titles .paragraphAbout{
+    font-size: 5rem;
+    width: 800px;
+      height: auto;
+  }
+  
+
     .filmMain {
+      height: 700px;
       .gridMain {
         width: 100%;
         display: flex;
